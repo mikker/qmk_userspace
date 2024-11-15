@@ -9,6 +9,7 @@
 #define COMBO_COUNT 3
 
 #define RGB_MATRIX_STARTUP_SPD 60
+#define MOONLANDER_USER_LEDS 0
 
 #ifndef __ASSEMBLER__
 // Define all of custom keycodes. Needs to be protected.
