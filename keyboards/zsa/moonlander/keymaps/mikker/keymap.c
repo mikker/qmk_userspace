@@ -6,18 +6,18 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        KC_NO, KC_NO,        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,  KC_NO,           KC_NO,
-        KC_NO, KC_Q,         KC_W,  KC_E,  KC_R,  KC_T,  KC_NO,            KC_NO, KC_Y,  KC_U,    KC_I,    KC_O,   KC_P,            KC_NO,
-        KC_NO, KC_A,         KC_S,  KC_D,  KC_F,  KC_G,  KC_NO,            KC_NO, KC_H,  KC_J,    KC_K,    KC_L,   KC_SCLN,         KC_NO,
-        KC_NO, LCTL_T(KC_Z), KC_X,  KC_C,  KC_V,  KC_B,                           KC_N,  KC_M,    KC_COMM, KC_DOT, RCTL_T(KC_SLSH), KC_NO,
-        KC_NO, KC_NO,        KC_NO, KC_NO, TL_LOWR,               KC_NO,    KC_NO,       TL_UPPR, KC_NO,   KC_NO,  KC_NO,           KC_NO,
+        KC_NO,   KC_NO,        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,  KC_NO,           KC_NO,
+        KC_NO,   KC_Q,         KC_W,  KC_E,  KC_R,  KC_T,  KC_NO,            KC_NO, KC_Y,  KC_U,    KC_I,    KC_O,   KC_P,            KC_NO,
+        KC_NO,   KC_A,         KC_S,  KC_D,  KC_F,  KC_G,  KC_NO,            KC_NO, KC_H,  KC_J,    KC_K,    KC_L,   KC_SCLN,         KC_NO,
+        KC_NO,   LCTL_T(KC_Z), KC_X,  KC_C,  KC_V,  KC_B,                           KC_N,  KC_M,    KC_COMM, KC_DOT, RCTL_T(KC_SLSH), KC_NO,
+        KC_SCRL, KC_NO,        KC_NO, KC_NO, TL_LOWR,               KC_NO,    KC_NO,       TL_UPPR, KC_NO,   KC_NO,  KC_NO,           KC_NO,
                                             KC_SPC, KC_NO, KC_NO,    KC_NO, KC_NO, KC_LSFT
     ),
     [1] = LAYOUT(
         KC_NO, KC_NO,   KC_NO,   KC_NO,        KC_NO,        KC_NO,   KC_NO,       KC_NO, KC_NO,   KC_NO,   KC_NO,         KC_NO,         KC_NO,   KC_NO,
         KC_NO, KC_TAB,  SW_TAB,  SW_BTICK,     SW_CTAB,      KC_VOLU, KC_NO,       KC_NO, KC_BSLS, KC_NO,   LGUI(KC_LBRC), LGUI(KC_RBRC), KC_BSPC, KC_NO,
         KC_NO, OS_CTRL, OS_ALT,  OS_CMD,       OS_SHFT,      KC_VOLD, KC_NO,       KC_NO, KC_LEFT, KC_DOWN, KC_UP,         KC_RGHT,       KC_ENT,  KC_NO,
-        KC_NO, DM_REC1, DM_PLY1, LGUI_T(KC_C), LGUI_T(KC_V), KC_MPLY,                     CW_TOGG, SELWORD, SGUI(KC_LBRC), SGUI(KC_RBRC), KC_F12,  KC_NO,
+        KC_NO, DM_REC1, DM_PLY1, LGUI(KC_C),   LGUI(KC_V),   KC_MPLY,                     CW_TOGG, SELWORD, SGUI(KC_LBRC), SGUI(KC_RBRC), KC_F12,  KC_NO,
         KC_NO, KC_NO,   KC_NO,   KC_NO,        KC_TRNS,          KC_NO,     KC_NO,                 KC_TRNS, KC_NO,         KC_NO,         KC_NO,   KC_NO,
                                                  KC_TRNS, KC_NO, KC_NO,     KC_NO, KC_NO, KC_TRNS
     ),
@@ -38,12 +38,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     KC_TRNS, KC_NO, KC_NO,      KC_NO, KC_NO, KC_TRNS
     )
 };
-
-#if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-
-};
-#endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
-
-
 
